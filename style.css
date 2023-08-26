@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+}
+
+.main-section{
+    background-color: white;
+    border-radius: 0.7rem;
+    height: auto;
+    width: 21rem;
+}
+
+.details{
+    display: none;
+}
+.valid{
+    display: flex;
+    width: 88%;
+    height: 3.3rem;
+    background-color: rgb(179, 231, 179);
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+    border-radius: 0.6rem;
+}
+
+.invalid{
+    display: flex;
+    width: 88%;
+    height: 3.3rem;
+    background-color: rgb(236, 195, 195);
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+    border-radius: 0.6rem;
+}
+
+
+.main-section button{
+    display: block;
+    width: auto;
+    background-color: blue;
+    color: white;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    padding: 0.6rem 3rem;
+    margin: 1rem auto;
+    border-radius: 0.3rem;
+    font-size: large;
+    font-weight: 500;
+}
+
+.main-input{
+    width: 88%;
+    display: block;
+    height: 3.3rem;
+    margin: 1.5rem auto 1rem;
+    text-align: center;
+    font-size: large;
+    margin-top: 1.5rem;
+    border-radius: 0.6rem;
+    border: 1px solid lightblue;
+}
+
+.main-input::placeholder{
+    font-size: 1.1rem;
+    color: gray;
+}
+
+.main-input:focus{
+    outline: none;
+    border: 2px solid blue;
+}
+
+.seperator{
+    height: 1px;
+    width: 88%;
+    background-color: gray;
+    margin: 1.5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seperator::before{
+    content: "or";
+    font-size: 1.2rem;
+    padding: 0rem 1rem;
+    background-color: white;
+}
+
+.main-section h1{
+    color: blue;
+    padding: 1rem 0.5rem 1rem 1rem;
+}
+
+.title-div{
+    border-bottom: 1px solid gray;
+    
+}
+
+
+/* Result Page */
+.weather-part{
+    width: auto;
+    height: 450px;
+    background-color: white;
+    border-radius: 0.7rem;
+    display: none;
+}
+
+.weather-part img{
+    height: 120px;
+    margin-top: 1.3rem;
+}
+
+.weather-part h1{
+    color: blue;
+    border-bottom: 1px solid gray;
+    padding: 1rem 4rem 1rem 1rem;
+}
+
+.weather-part h1 i{
+    padding-right: 0.6rem;
+    cursor: pointer;
+}
+
+.list-item{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+li:nth-child(2){
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+li:nth-child(3){
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.city{
+    position: relative;
+    bottom: 0.4rem;
+}
+
+.weather-bottom{
+    margin-top: 1rem;
+    border-top: 1px solid gray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.weather-bottom i{
+    float: left;
+    font-size: 2.6rem;
+    color: green;
+}
+
+.weather-bottom p{
+    line-height: 1rem;
+}
+
+.left{
+    display: flex;
+    position: relative;
+    top: 0.8rem;
+    left: 1.5rem;
+}
+
+.right{
+    display: flex;
+    position: relative;
+    top: 0.8rem;
+    left: 1.5rem; 
+}
+
+.left div{
+    padding-top: 0.2rem;
+}
+
+.right div{
+    padding-top: 0.2rem;
+}
+
+.right-section{
+    border-left: 1px solid gray;
+    width: 50%;
+    height: 4.5rem;
+}
+
+.left-section{
+    width: 50%;
+    height: 4.5rem;
+}
