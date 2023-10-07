@@ -7,8 +7,13 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html, body{
+    height: 100%;
+    overflow: hidden;
+}
+
 .main{
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,11 +117,10 @@
     
 }
 
-
 /* Result Page */
 .weather-part{
     width: auto;
-    height: 450px;
+    height: 68%;
     background-color: white;
     border-radius: 0.7rem;
     display: none;
@@ -133,6 +137,9 @@
     padding: 1rem 4rem 1rem 1rem;
 }
 
+.weather-part h1 span{
+    font-size: 1.2rem;
+}
 .weather-part h1 i{
     padding-right: 0.6rem;
     cursor: pointer;
@@ -210,4 +217,24 @@ li:nth-child(3){
 .left-section{
     width: 50%;
     height: 4.5rem;
+}
+
+@media (orientation : landscape){
+    html, body{
+        height: 100%;
+        width: 100%;
+        overflow: visile;
+    }
+    .weather-part{
+        width: 100%;
+        height: 100%;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+   .main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+    
 }
